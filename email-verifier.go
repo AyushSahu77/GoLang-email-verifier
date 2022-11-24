@@ -23,7 +23,7 @@ func main() {
 	}
 }
 
-func checkDomain(domain string) { // To check the ____ of the domain provided
+func checkDomain(domain string) { // To check if the domain provided is verifed of not
 
 	// Declaring Variables
 	var hasMX, hasSPF, hasDMARC bool
