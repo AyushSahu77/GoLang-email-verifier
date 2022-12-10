@@ -50,7 +50,7 @@ func checkDomain(domain string) { // To check if the domain provided is verifed 
 		log.Printf("Error:%v\n", err)
 	}
 
-	// Looping through all the spfRecords if it has prefix set to spf1, DMARC is set to spf1 if it is true
+	// Looping through all the spfRecords if it has prefix set to spf1, spfRecords is set to spf1 if it is true
 
 	for _, record := range spfRecords { // Iterating through records to check if record matches the right prefix of spf1
 		if strings.HasPrefix(record, "v=spf1") {
